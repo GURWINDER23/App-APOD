@@ -1,0 +1,1 @@
+First I create HTML page as a name of Index.html page in this create the structure for my app and then I create css file in which I add all my style. Third file is Script.js in this javascript file I create function with the help of these function I get images from APOD Api.
