@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #493c81;
+
+  background: linear-gradient(to bottom, #463, #191919);
+  text-align: center;
+  color: lightgoldenrodyellow;
+  min-height: 100vh;
+}
+
+header {
+  
+  
+  background-color: lightgoldenrodyellow;
+  background-image: url("/img/R.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: initial;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Timesnewroman", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+form {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0);
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  background: linear-gradient(to right, rgb(18, 95, 77), blueviolet);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
+  cursor: revert-layer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.favorites {
+  margin-left: 10px;
+}
+
+.main-container {
+  margin-top: 70px;
+}
+
+#apodContainer {
+  margin-bottom: 2rem;
+}
+
+.apodItem {
+  margin-bottom: 1rem;
+}
+
+.apodItem img {
+  max-width: 500px;
+  min-width: 500px;
+  max-height: 400px;
+  min-height: 400px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+}
+
+.apodItem h2 {
+  margin-top: 0;
+}
+
+#favoritesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.favoriteItem {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.favoriteItem img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+#dateInput {
+  padding: 0.8vw 1.2vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+#favoritesContainer div {
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.favoriteImg {
+  min-width: 180px;
+  min-height: 180px;
+  max-width: 180px;
+  max-height: 180px;
+}
+
+.content {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0px;
+  padding: 0 15px;
+}
+
+.date {
+  font-weight: bold;
+  color: rgb(224, 224, 224);
+  font-size: 1.1rem;
+}
+
+.deleteBtn {
+  max-width: 90px;
+  max-height: 90px;
+  margin-bottom: 10px;
+}
+
+.explanation {
+  line-height: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 1.2rem;
+  }
+
+  .apodItem img {
+    max-width: 100%;
+    min-width: unset;
+    max-height: unset;
+    min-height: unset;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    font-size: 1rem;
+  }
+
+  .apodItem img {
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 300px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-top: 0px;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .explanation {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -40px;
+  }
+
+  label {
+    margin-bottom: 0.8rem;
+  }
+
+  input {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  button {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .favoriteImg {
+    width: 150px;
+    max-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .favoriteItem {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .favoriteImg {
+    min-width: 250px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .favoriteItem {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .favoriteImg {
+    min-width: 430px;
+    min-height: 300px;
+    max-width: none;
+    max-height: 300px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
